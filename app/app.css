@@ -1,0 +1,250 @@
+/************************************************************************************/
+/*************** App Styles ***************/
+/************************************************************************************/
+body {
+}
+
+.filler {
+    min-height: 10px;
+}
+
+.menu-bar {
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+}
+
+.stripe-1 {
+    background: rgb(47, 47, 47);
+    height: 0.6em;
+}
+
+.stripe-2 {
+    background: rgb(35, 35, 35);
+    height: 0.6em;
+}
+
+.stripe-3 {
+    background: rgba(22, 22, 22, 1);
+    height: 0.6em;
+}
+
+.stripe-4 {
+    height: 10em;
+    background: black;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}
+
+#welcomeViewBtn {
+    width: 15em;
+    margin-top: 2em;
+}
+
+#welcomeBtnImg {
+    width: 15em;
+    height: auto;
+}
+
+#mapViewBtn {
+    width: 8em;
+    height: auto;
+    float: right;
+}
+
+#mapBtnImg {
+    width: 8em;
+    height: auto;
+}
+
+#listViewBtn {
+    width: 8em;
+    height: auto;
+    float: right;
+}
+
+#listBtnImg {
+    width: 8em;
+    height: auto;
+}
+
+.menu-btn {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin:0.5em;
+}
+
+.btn-holder {
+    position: relative;
+    display: block;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    padding: 0.3em 1em 1em 1em;
+}
+
+@media screen and (max-width: 800px) {
+    .menu-btn {
+        width: 33%;
+    }
+
+    #welcomeViewBtn {
+        background: #0061A9;
+        width: 33%;
+    }
+
+    #welcomeBtnImg {
+        width: 10em;
+        height: auto;
+    }
+
+    #mapViewBtn {
+        background: #FEC050;
+        width: 33%;
+    }
+
+    #listViewBtn {
+        background: #26905D;
+        width: 33%;
+    }
+}
+
+.alert {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 80%;
+}
+
+#alert-bar {
+    position: fixed;
+    z-index: 99;
+    height: 4em;
+    left: 0;
+    right: 0;
+}
+
+/************************************************************************************/
+/*************** Welcome View Styles ***************/
+/************************************************************************************/
+#gov-img {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 35%;
+    height: auto;
+    padding-top: 15em;
+    padding-bottom: 5em;
+}
+
+#circ-img {
+    position: fixed;
+    width: 33%;
+    top: 3%;
+    left: 35%;
+    opacity: 0.3;
+}
+
+.welcome-text {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 33%;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    #gov-img {
+        width: 80%;
+        height: auto;
+        padding-top: 10em;
+        padding-bottom: 5em;
+    }
+
+    .welcome-text {
+        font-size: large;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/************************************************************************************/
+/*************** Map View Styles ***************/
+/************************************************************************************/
+#googleMap {
+    width: 100%;
+    height: 100%;
+}
+
+.map-holder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/************************************************************************************/
+/*************** List View Styles ***************/
+/************************************************************************************/
+
+.btn-group {
+    margin: 2em 1em 0.5em 1em;
+}
+
+#license-table_wrapper {
+    padding: 0 1em;
+}
+
+.table-edit-btn {
+    background: url("../app/listView/edit.png") no-repeat;
+}
+
+.modal-field {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    float: right;
+}
+
+.input-label-holder {
+    display: block;
+    position: relative;
+    width: 70%;
+    margin: auto;
+    padding: 0.25em 0;
+}
+
+div.input-label-holder label {
+    padding: 0.25em 0;
+}
+
+input.error, select.error {
+    border: 2px solid red;
+}
+
+tbody {
+    max-height: 50% !important;
+}

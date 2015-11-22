@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Government of Alberta Well License Creator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="components/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <link href="../app/favicon.ico" rel="icon" type="image/x-icon" />
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12">
+            <div id="alert-bar"></div>
+            <div ng-view class="row"></div>
+        </div>
+    </div>
+    <div class="menu-bar row">
+        <div class="col-lg-12 col-sm-12">
+            <div class="stripe-1 row"></div>
+            <div class="stripe-2 row"></div>
+            <div class="stripe-3 row"></div>
+            <div class="stripe-4 row">
+                <div class="btn-holder">
+                    <a id="welcomeViewBtn" class="menu-btn" href="#/welcomeView"><img id="welcomeBtnImg" src="../app/welcomeView/gov-logo.png" /></a>
+                    <a id="mapViewBtn" class="menu-btn" href="#/mapView"><img id="mapBtnImg" src="../app/mapView/map.png" /></a>
+                    <a id="listViewBtn" class="menu-btn" href="#/listView"><img id="listBtnImg" src="../app/listView/list.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="welcomeView/welcomeView.js"></script>
+<script src="mapView/mapView.js"></script>
+<script src="listView/listView.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+<script src="components/bootstrap/js/bootstrap.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
+
+</body>
+</html>
